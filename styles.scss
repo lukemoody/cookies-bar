@@ -1,0 +1,49 @@
+.js-cookies {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba($color: #0000, $alpha: 0.7);
+
+  &__inner {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $c-main;
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 35px;
+    display: flex;
+    justify-content: center;
+
+    p {
+      margin: 0;
+      text-align: center;
+    }
+
+    a {
+      color: $c-body;
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    .btn {
+      margin-left: 40px;
+      cursor: pointer;
+      margin-top: 20px;
+
+      @include g_mw { 
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+      }
+    }
+  }
+}
